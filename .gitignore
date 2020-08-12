@@ -1,0 +1,51 @@
+# Created by Jayesh J.
+*.class
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+out
+.cache/
+.history/
+.lib/
+dist/*
+target/
+bin/
+libexec/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+logs/
+project/*-shim.sbt
+project/.idea/
+project/.idea_modules
+project/.sbtserver
+project/.sbtserver.lock
+project/target/
+target/
+.scala_dependencies
+.worksheet
+.DS_Store
+newman/
+apidoc/
+
+# firebase secret
+modules/subscription-api/secondary-adapter/conf/partial/subscription-api/secondary-adapter/firebase/*-firebase-account-key.json
+
+# for k8s
+k8s/**/secret.yaml
+k8s/**/emr.env
+# 手動実行用のjob定義は自動生成
+k8s/qa/subscription-api/job/*.yaml
+
+# embulk
+embulk/embulk_bundle/jruby
+embulk/embulk_bundle/ruby
+embulk/embulk_bundle/vendor
+
+# metals
+.metals/
+.bloop/
+project/metals.sbt
